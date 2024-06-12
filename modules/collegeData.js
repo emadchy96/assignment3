@@ -1,5 +1,6 @@
 const fs = require("fs");
 
+
 class Data{
     constructor(students, courses){
         this.students = students;
