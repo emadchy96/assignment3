@@ -14,7 +14,7 @@ const app = express();
 const path = require('path');
 const collegeData = require('./modules/collegeData');
 
-app.use("data", express.static("data"))
+app.use(express.static(__dirname + '/data'));
 // Routes
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'));
