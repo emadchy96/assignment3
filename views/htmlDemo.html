@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Demo</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .image-container img {
+            width: 200px; /* Set the desired width */
+            height: 150px; /* Set the desired height */
+            object-fit: cover; /* Ensures the image covers the entire area */
+            margin-right: 10px; /* Optional: Adds space between images */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Navbar</a>
+        <a class="navbar-brand" href="/">WEB700</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -17,38 +26,134 @@
                     <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/htmlDemo">HTML Demo <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/htmlDemo">HTML Demo</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
-        <h1>HTML Demo Page</h1>
-        <h2>Sample Elements</h2>
-        <p>This page showcases various HTML5 elements and features:</p>
-        <section>
-            <header>
-                <h2>Header Section</h2>
-                <nav>
-                    <ul>
-                        <li><a href="#section1">Section 1</a></li>
-                        <li><a href="#section2">Section 2</a></li>
-                        <li><a href="#section3">Section 3</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <article>
-                <h3>Article 1</h3>
-                <p>This is the first article with a sample paragraph.</p>
-            </article>
-            <article>
-                <h3>Article 2</h3>
-                <p>This is the second article with another sample paragraph.</p>
-            </article>
-            <footer>
-                <p>Footer content goes here.</p>
-            </footer>
-        </section>
+        <h1>HTML Demo</h1>
+
+        <h2>NBA Season Stats</h2>
+        <table class="table">
+            <caption>In the latest NBA season, Kyrie Irving demonstrated his scoring prowess with an average of 27.1 points per game (PPG), coupled with 5.5 assists (APG) and 4.8 rebounds (RPG). LeBron James continued to defy age with 25.0 PPG, 7.8 RPG, and 6.8 APG, showcasing his all-around impact on the court. Meanwhile, Stephen Curry remained a sharpshooting force, averaging 29.4 PPG, 6.3 APG, and 5.2 RPG, while leading the league in three-pointers made per game, reaffirming his status as one of the greatest shooters in NBA history.</caption>
+            
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Games Played</th>
+                    <th>Total Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stephen Curry</td>
+                    <td>55</td>
+                    <td>1234</td>
+                </tr>
+                <tr>
+                    <td>Lebron James</td>
+                    <td>58</td>
+                    <td>5432</td>
+                </tr>
+                <tr>
+                    <td>Kyrie Irving</td>
+                    <td>46</td>
+                    <td>6543</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><b>Total</b></td>
+                    <td>153</td>
+                    <td>13564</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table class="table">
+            <caption>In the latest NBA season, Kyrie Irving, LeBron James, and Stephen Curry each showcased their playmaking abilities. Irving consistently facilitated his team's offense with his adept passing. LeBron continued to excel in creating opportunities for his teammates, leveraging his vision and experience. Curry, known for his scoring, also contributed significantly to his team's ball movement and offensive flow with his assists.</caption>
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Games Played</th>
+                    <th>Assists</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stephen Curry</td>
+                    <td>55</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Lebron James</td>
+                    <td>58</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Kyrie Irving</td>
+                    <td>46</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>153</td>
+                    <td>600</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>This section demonstrates HTML tables with various elements like caption, thead, tbody, tfoot, th, td, tr, rowspan, and colspan.</p>
+
+        <h2>NBA Scoring Leaders</h2>
+        <ul>
+            <li>Top 3
+                <ol>
+                    <li>Kyrie</li>
+                    <li>Curry</li>
+                    <li>James</li>
+                </ol>
+            </li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5
+                <ul>
+                    <li>Sub-item 1</li>
+                    <li>Sub-item 2</li>
+                    <li>Sub-item 3</li>
+                </ul>
+            </li>
+        </ul>
+        <p>This section demonstrates HTML lists including ordered and unordered lists with nested lists.</p>
+
+        <h2>Snowboarding</h2>
+        <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Image 1">
+            <img src="https://cdn.pixabay.com/photo/2023/07/26/02/04/snow-8150145_1280.jpg" alt="Image 2">
+            <img src="https://cdn.pixabay.com/photo/2018/09/11/09/25/snowboard-3668972_1280.jpg" alt="Image 3">
+        </div>
+        <p>Snowboarding is a popular winter sport that involves descending a snow-covered slope on a snowboard attached to a rider's feet. Combining elements of skiing, skateboarding, and surfing, snowboarding offers an exhilarating experience characterized by speed, agility, and creativity. It has grown from a fringe activity into a mainstream sport, with events featured in the Winter Olympics and numerous competitive circuits. Riders of all levels enjoy snowboarding for its thrill and the sense of freedom it provides on the mountain slopes.</p>
+
+        <h2>EDM</h2>
+        <audio controls>
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+            <source src="•	https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg " type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Electronic Dance Music (EDM) is a broad range of percussive electronic music genres made primarily for nightclubs, raves, and festivals. Originating in the late 20th century, EDM encompasses styles such as house, techno, trance, drum and bass, and dubstep. It is characterized by its high-energy beats, synthesized melodies, and emphasis on rhythm and bass. EDM tracks often feature build-ups, drops, and repetitive hooks that create an exhilarating and immersive experience for listeners. The genre has gained massive popularity globally, with DJs and producers becoming iconic figures in the music industry, headlining major music festivals and influencing pop culture..</p>
+
+        <h2>Planet Earth</h2>
+        <video width="720" height="250" controls>
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+       
+
+        <p>Earth presents a breathtaking and awe-inspiring sight, showcasing its vast and diverse landscapes. From space, our planet appears as a beautiful blue orb, with swirling white clouds covering its surface and vast stretches of oceans reflecting sunlight. The contrast of the green and brown landmasses against the deep blue of the seas highlights the rich diversity of our planet's ecosystems. The polar ice caps gleam brilliantly at the poles, while the intricate patterns of mountain ranges, forests, and deserts are clearly visible. This satellite perspective underscores the fragility and interconnectedness of Earth's environment, emphasizing the importance of protecting our unique and precious home</p>
     </div>
 </body>
 </html>
